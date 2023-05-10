@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge ONE Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <script src=""></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="media\vectoralura.png" alt="logo alura">
+    </header>
+
+    <main>
+        <section class="entrada-texto">
+            <textarea class="area-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí" required></textarea>            
+            <div class="area-alerta">
+                <img class="imagen-alerta" src="media\warning.png" alt="simbolo alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>            
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>            
+        </section>
+
+        <section class="texto-encriptado">
+            <textarea class="texto-mensaje" cols="20" rows="10" readonly="readonly"></textarea>                    
+            <div class="alertas-mensaje">
+                <p class="texto-alerta">Ningún mensaje fue encontrado</p>
+                <p class="ingrese-texto">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="btn-copiar">
+                <button class="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+            <div class="btn-copiar">
+                <button class="limpiar" onclick="limpiarCampos()">Limpiar campos</button>
+            </div>            
+        </section>
+        
+    </main>
+
+    <footer>
+        <p class="datos-desarrollador">Desarrollado por: Peter Doria | Email: peter.doria2012@gmail.com</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
